@@ -6,6 +6,8 @@ import { ThemePalette } from '@angular/material/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { PizzaPartyComponent } from 'src/app/utils/pizza-party/pizza-party.component';
 import { SucessComponent } from 'src/app/utils/sucess/sucess.component';
+import { Route } from '@angular/compiler/src/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-usuarios',
@@ -37,7 +39,8 @@ export class UsuariosComponent implements OnInit {
   ];
 
   constructor(private _formBuilder: FormBuilder,
-              private _snackBar: MatSnackBar) {
+              private _snackBar: MatSnackBar,
+              private router: Router) {
 
   }
 
@@ -77,6 +80,8 @@ export class UsuariosComponent implements OnInit {
       duration: this.durationInSeconds,
       panelClass: ['green-snackbar'],
     });
+
+    this.router.navigate(['dashboard']);
   }
 
 }

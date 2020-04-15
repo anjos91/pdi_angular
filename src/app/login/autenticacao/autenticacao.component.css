@@ -15,8 +15,7 @@ mat-card-title{
 }
 
 .example-header-image {
-  /*background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');*/
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   /*background-image: url('C:\Users\angel\source\repos\pdi_angular\src\app\img\logo.png');*/
-  background-image: url('/logo.png');
   background-size: cover;
 }
